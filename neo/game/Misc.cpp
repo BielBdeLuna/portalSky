@@ -3194,6 +3194,9 @@ void idPortalSky::Spawn( void ) {
 	
 		
 	if ( !spawnArgs.GetBool( "triggered" ) ) {
+		if ( spawnArgs.GetInt( "type" ) != PORTALSKY_STANDARD ) {
+                        gameLocal.portalSkyScale = spawnArgs.GetInt( "scale", "16" );
+                }
 		PostEventMS( &EV_PostSpawn, 1 );
 	}
 
@@ -3214,7 +3217,6 @@ void idPortalSky::Event_PostSpawn() {
 		// both standard and local portalSky share the origin, it's in the execution that things change.
 	}
 
-	gameLocal.portalSkyScale = spawnArgs.GetInt( "scale", "16" );	
 	gameLocal.SetPortalSkyEnt( this );
 }
 
