@@ -4338,10 +4338,10 @@ void idGameLocal::SetPortalSkyEnt( idEntity *ent ) {
 
 /*
 =================
-idGameLocal::IsPortalSkyAcive
+idGameLocal::IsPortalSkyActive
 =================
 */
-bool idGameLocal::IsPortalSkyAcive() {
+bool idGameLocal::IsPortalSkyActive() {
 	return portalSkyActive;
 }
 
