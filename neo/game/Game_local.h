@@ -337,7 +337,7 @@ public:
 		
 
 	void					SetPortalSkyEnt( idEntity *ent );
-	bool					IsPortalSkyAcive();
+	bool					IsPortalSkyActive();
 	//7318 start
 	bool					CheckGlobalPortalSky();	
 	void					SetGlobalPortalSky(const char *name);
